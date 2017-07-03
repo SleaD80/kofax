@@ -32,7 +32,7 @@ Public Function GetVLinesCount(ByVal pXDoc As CASCADELib.CscXDocument, Optional 
       Set hL = pLD.GetVerLine(i)
       yEndAverage = yEndAverage + hL.EndY
    Next
-   yEndAverage = yEndAverage / pLD.VerLineCount
+   yEndAverage = IIf(pLD.VerLineCount > 0, yEndAverage / pLD.VerLineCount, 0)
    yDelta = pImage.Height / 10 ' Delta of yEnd from average to accept the line
 
    ' Remove from average estimate "unique" lines
@@ -46,7 +46,7 @@ Public Function GetVLinesCount(ByVal pXDoc As CASCADELib.CscXDocument, Optional 
          tempAverage = tempAverage + hL.EndY
       End If
    Next
-   tempAverage = tempAverage / (pLD.VerLineCount - removedCount)
+   tempAverage = IIf(pLD.VerLineCount > removedCount, tempAverage / (pLD.VerLineCount - removedCount), 0)
    yEndAverage = tempAverage
 
    ' Now, when average is for the table lines only, we can force more strict limit to separate excess lines
