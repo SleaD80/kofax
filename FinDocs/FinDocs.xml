@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<project version="6.0" guid="a2822c08-a044-11e6-a1dc-005056b10041" colcnt="16" cscnt="5" desc="" tfolder="" newsmpl="" checksm="752738193" prjchecksum="1591069780">
+	<class name="" guid="0007f873-5b11-11e7-8cc1-3cd92b5c7504" gvFld="" extname="" DefFld="">
+		<__cls DefView="" UseLayout="1" UseContent="1" MinTDSPageCount="1" MaxTDSPageCount="0"/>
+		<script/>
+		<class name="Invoice" guid="d8561e5f-5b11-11e7-8cc1-3cd92b5c7504" gvFld="" extname="" id="1" DefFld="">
+			<__cls DefView="" UseLayout="1" UseContent="1" MinTDSPageCount="1" MaxTDSPageCount="0"/>
+			<script/>
+			<valform viewcap="" selcap="" inited="0" fontlab="Microsoft Sans Serif;825;0;0;0" fontfie="Microsoft Sans Serif;825;0;0;0" sepstyl="0">
+				<tab text="Tab 1"/>
+				<redact color="1"/>
+			</valform>
+		</class>
+		<class name="UPD" guid="d8561e60-5b11-11e7-8cc1-3cd92b5c7504" gvFld="" extname="" id="2" DefFld="">
+			<__cls DefView="" UseLayout="1" UseContent="1" MinTDSPageCount="1" MaxTDSPageCount="0"/>
+			<script/>
+			<valform viewcap="" selcap="" inited="0" fontlab="Microsoft Sans Serif;825;0;0;0" fontfie="Microsoft Sans Serif;825;0;0;0" sepstyl="0">
+				<tab text="Tab 1"/>
+				<redact color="1"/>
+			</valform>
+		</class>
+		<valform viewcap="" selcap="" inited="0" fontlab="Microsoft Sans Serif;825;0;0;0" fontfie="Microsoft Sans Serif;825;0;0;0" sepstyl="0">
+			<tab text="Tab 1"/>
+			<redact color="1"/>
+		</valform>
+	</class>
+	<folder name="Project Folder" guid="">
+		<script/>
+	</folder>
+	<settings ActDS="1" DefDate="DefaultDateFormatter" DefAmnt="DefaultAmountFormatter" RotOcr="1" ActADS="1" IntegrTDS="1" ADSClsMode="1" DRautoNMode="1" vallay="1" trained="1" curlang="" projlangcount="0">
+		<LearnPath/>
+		<MaxClassId>2</MaxClassId>
+		<ADSPath/>
+		<ResTag>pres</ResTag>
+	</settings>
+	<views>
+		<TLLayout>
+			<name>Layout Classifier</name>
+			<type>TiffClassifier</type>
+			<path>FinDocs_LayoutClassifier.dat</path>
+			<LearnsetPath/>
+			<SharedView/>
+			<FDSPath/>
+			<LSManagement>0</LSManagement>
+		</TLLayout>
+		<TLContent>
+			<name>Adaptive Feature Classifier</name>
+			<type>AFTextClassifier</type>
+			<path>FinDocs_ContentClassifier.dat</path>
+			<LearnsetPath/>
+			<SharedView/>
+			<FDSPath/>
+			<LSManagement>0</LSManagement>
+		</TLContent>
+		<TDSTemplate>
+			<name>TDSSettingsTemplate</name>
+			<type>AFTextClassifier</type>
+			<path>FinDocs_TDSSettingsTemplate.dat</path>
+			<LearnsetPath/>
+			<SharedView/>
+			<FDSPath/>
+			<LSManagement>0</LSManagement>
+		</TDSTemplate>
+		<TDSClass>
+			<name>TDS_1</name>
+			<type>AFTextClassifier</type>
+			<path>FinDocs_TDSPageClassifier_1.dat</path>
+			<LearnsetPath/>
+			<SharedView/>
+			<FDSPath/>
+			<LSManagement>0</LSManagement>
+			<ClassId>1</ClassId>
+		</TDSClass>
+		<TDSClass>
+			<name>TDS_2</name>
+			<type>AFTextClassifier</type>
+			<path>FinDocs_TDSPageClassifier_2.dat</path>
+			<LearnsetPath/>
+			<SharedView/>
+			<FDSPath/>
+			<LSManagement>0</LSManagement>
+			<ClassId>2</ClassId>
+		</TDSClass>
+	</views>
+	<clssettings MinLCnf="0.600000" MinLDst="0.100000" MinCCnf="0.700000" MinCDst="0.100000" TDSIntegratedCls="1" ContentType="0"/>
+	<corrset version="1"/>
+	<bitonals version="1"/>
+	<script/>
+	<application/>
+	<matexceptions/>
+	<glbcol gcid="0" guid="00F2D6B0-0581-4067-95FD-017EA000EB83" default="1" dcolheaderlocalization="Position"/>
+	<glbcol gcid="1" guid="0216C85A-5FC1-405F-8B0C-C1979C9BD2DD" default="1" dcolheaderlocalization="Quantity"/>
+	<glbcol gcid="2" guid="9C53C9C9-4722-46D8-94B4-A70A3B552E13" default="1" dcolheaderlocalization="Description"/>
+	<glbcol gcid="3" guid="6AC6E3C1-4F4C-4D92-897F-632E850A6521" default="1" dcolheaderlocalization="Unit Price"/>
+	<glbcol gcid="4" guid="26D98EE1-B593-4B59-A7EA-55512CE1AA85" default="1" dcolheaderlocalization="Total Price"/>
+	<glbcol gcid="5" guid="E5143991-CEA3-4F04-80A8-D9E374B6651C" default="1" dcolheaderlocalization="Discount"/>
+	<glbcol gcid="6" guid="F494F1C9-8FEF-4225-AF0F-FCB5F88ED95A" default="1" dcolheaderlocalization="Unit Measure"/>
+	<glbcol gcid="7" guid="25253D05-2D86-4748-9D2D-6F8AF96A057E" default="1" dcolheaderlocalization="Article Code"/>
+	<glbcol gcid="8" guid="5012A53D-9B57-40E6-83A8-E00F75A5311D" default="1" dcolheaderlocalization="Supplier Article Code"/>
+	<glbcol gcid="9" guid="96E7D1DC-9468-4C0B-BE67-75C631E1332C" default="1" dcolheaderlocalization="Order Number"/>
+	<glbcol gcid="10" guid="9E901CD2-28C8-4C69-B7B7-444F1B538E34" default="1" dcolheaderlocalization="Delivery Note Number"/>
+	<glbcol gcid="11" guid="A83A83D8-0269-4998-BB5D-34350156A6AB" default="1" dcolheaderlocalization="Tax Rate"/>
+	<glbcol gcid="10000" guid="0C738C84-1973-443D-8838-0CFF5A0BA99A" default="1" dcolheaderlocalization="PO Item Number"/>
+	<glbcol gcid="15000" guid="900BA360-C1C6-441A-9BE7-A31F29ADFA1D" default="1" dcolheaderlocalization="Tax Amount"/>
+	<glbcol gcid="15001" guid="DF5C6F17-7FEA-4FBA-B969-36B0B52435D5" default="1" dcolheaderlocalization="Discount Amount"/>
+	<glbcol gcid="16000" guid="2E2DD2DD-DD6A-4C51-87DF-CD2AD44A39B5" default="1" dcolheaderlocalization="Match Remark"/>
+	<cntryset geoid="94" TAXCNT="2" Tax0="0.190000" Tax1="0.070000"/>
+	<cntryset geoid="244" TAXCNT="0" TaxMdl="1"/>
+	<cntryset geoid="84" TAXCNT="3" Tax0="0.196000" Tax1="0.055000" Tax2="0.021000"/>
+	<cntryset geoid="217" TAXCNT="3" Tax0="0.210000" Tax1="0.100000" Tax2="0.040000"/>
+	<cntryset geoid="242" TAXCNT="2" Tax0="0.200000" Tax1="0.050000"/>
+	<format name="DefaultDateFormatter" type="DateFormatter" DictName="" FrmCount="2" Frm0="4" Frm1="5"/>
+	<format name="DefaultAmountFormatter" type="AmountFormatter" negativ="1" CurCount="3" Cur0="EU" Cur1="EURO" Cur2="EUR"/>
+	<ocrerr errchar="|" repchar="1"/>
+	<ocrerr errchar="l" repchar="1"/>
+	<ocrerr errchar="&#xDC;" repchar="0"/>
+	<ocrerr errchar="o" repchar="0"/>
+	<ocrerr errchar="O" repchar="0"/>
+	<ocrerr errchar="B" repchar="8"/>
+	<ocrerr errchar="I" repchar="1"/>
+	<ocrerr errchar="S" repchar="5"/>
+	<RecogProfiles NextId="14" DefPr="0" DefZrOcr="2" DefZrOmr="10">
+		<RecogProfile Class="RECOG_PAGE_OCR_FR" Type="1" Subtype="1" Id="0" Name="FineReader" Rotate="1" RemBack="0" RemNois="0" SingleColMode="0" CSkew="1" FastMod="1" TIndex="0" TMicr="0" TMicrCMC7="0" TOCRB="0" TOCRA="0" TType="1" THand="0" WStyle="0" TNorm="1" TMatrix="1" FullTDA="1" RecText="1" RecBar="0" BOrient="15" BarType="-1" WordSep="/:()-#" TxtLang="Mixed">
+			<Dictionaries>
+				<Dictionary Name="C:\Projects\Kofax\FinDocs\Dictionary.txt" Extension=".txt" CreationLow="-1601599054" CreationHigh="30601027" LastAccessLow="-1601599054" LastAccessHigh="30601027" LastWriteLow="-1601599054" LastWriteHigh="30601027">
+					<Content/>
+				</Dictionary>
+			</Dictionaries>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_PAGE_OCR_RECOSTAR" Type="1" Subtype="1" Id="1" Name="RecoStar" Rotate="1" WordSep="/:()-#" CorNum="1" Lang="USA" Font="0" Syntax="0" CharSet="" CharSetValid="0" Pattern="" LogCtx="1" Trigram="0" Engine="3" VotRisk="1" VotBias="0" IPP="Remove Shading, Dots, Lines, Punchholes" Lines="-4" MachPt="-1" HandPt="-1" DictCom="0">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_FR" Type="2" Subtype="1" Id="2" Name="FR_HandAlphanum" TxtLang="English" TNormal="0" THandP="1" WStyle="1" ProLet="">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_FR" Type="2" Subtype="1" Id="3" Name="FR_HandNum" Numeric="1" TxtLang="English" TNormal="0" THandP="1" WStyle="1" ProLet="">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_FR" Type="2" Subtype="1" Id="4" Name="FR_MachineAlphanum" TxtLang="English" TTypeW="1" TMatrix="1" ProLet="">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_FR" Type="2" Subtype="1" Id="5" Name="FR_MachineNum" Numeric="1" TxtLang="English" TTypeW="1" TMatrix="1" ProLet="">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_RECOSTAR" Type="2" Subtype="1" Id="6" Name="RS_HandAlphanum" WordSep="" CorNum="0" Lang="USA" Font="2" Syntax="0" CharSet="" CharSetValid="0" Pattern="" LogCtx="1" Trigram="2" Engine="3" VotRisk="1" VotBias="0" IPP="Remove Dots" Lines="-1" MachPt="-1" HandPt="-1" DictCom="0">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_RECOSTAR" Type="2" Subtype="1" Id="7" Name="RS_HandNum" WordSep="" CorNum="0" Lang="USA" Font="2" Syntax="1" CharSet="" CharSetValid="0" Pattern="" LogCtx="1" Trigram="2" Engine="3" VotRisk="1" VotBias="0" IPP="Remove Dots" Lines="-1" MachPt="-1" HandPt="-1" DictCom="0">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_RECOSTAR" Type="2" Subtype="1" Id="8" Name="RS_MachineAlphanum" WordSep="" CorNum="0" Lang="USA" Font="3" Syntax="0" CharSet="" CharSetValid="0" Pattern="" LogCtx="1" Trigram="2" Engine="3" VotRisk="1" VotBias="0" IPP="Remove Dots" Lines="-1" MachPt="-1" HandPt="-1" DictCom="0">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OCR_RECOSTAR" Type="2" Subtype="1" Id="9" Name="RS_MachineNum" WordSep="" CorNum="0" Lang="USA" Font="3" Syntax="1" CharSet="" CharSetValid="0" Pattern="" LogCtx="1" Trigram="2" Engine="3" VotRisk="1" VotBias="0" IPP="Remove Dots" Lines="-1" MachPt="-1" HandPt="-1" DictCom="0">
+			<Dictionaries/>
+		</RecogProfile>
+		<RecogProfile Class="RECOG_ZONE_OMR_KOFAX" Type="2" Subtype="2" Id="10" Name="OMR_Auto_Single" NumberOfOMRBoxes="1"/>
+		<RecogProfile Class="RECOG_ZONE_OMR_KOFAX" Type="2" Subtype="2" Id="11" Name="OMR_Auto_Multi"/>
+		<RecogProfile Class="RECOG_ZONE_OMR_KOFAX" Type="2" Subtype="2" Id="12" Name="OMR_Manual" Mode="1"/>
+		<RecogProfile Class="RECOG_PAGE_OCR_MIXED" Type="1" Subtype="1" Id="13" Name="Mixed Print" Rotate="1" WordSep="/:()-#" MachID="1" HandID="6" Single="0" MinHand="50"/>
+	</RecogProfiles>
+	<ImageCleanupProfiles NextId="0"/>
+	<skbsettings path="\\kfxsrv9\capturesv\MailroomDB\OnlineLearning\FinDocs" group=""/>
+	<strgs/>
+	<mnus>
+		<DR>
+			<mmnus>
+				<mmnu key="" cptn="" cstm="1">
+					<smnus/>
+				</mmnu>
+			</mmnus>
+		</DR>
+	</mnus>
+	<DocSets CfiDocSet="C:\Projects\Kofax\FinDocs\ClassificationTraining|ClassificationTraining|SQLite" ExtDocSet="C:\Projects\Kofax\FinDocs\ExtractionTraining|ExtractionTraining|SQLite">
+		<Benchmarks>
+			<DocSet Path="C:\DocumentSets\Financial Docs\Test Set|..\..\..\DocumentSets\Financial Docs\Test Set|SQLite"/>
+		</Benchmarks>
+	</DocSets>
+</project>
